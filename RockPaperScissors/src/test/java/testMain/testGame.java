@@ -39,27 +39,20 @@ public class testGame {
 
 	@Test
 	public void testLetsPlayPaper() {
-		if (p2Move.contentEquals("Paper")) {
-			System.out.println("pap" + p2Move);
-			assertEquals("p2",RockPaperScissors.letsPlay(p1Move,p2Move));
-		}
-		else testLetsPlayPaper();
+			
+			assertEquals("p2",RockPaperScissors.letsPlay(p1Move,"Paper"));
+		
 	}
 	
 	@Test
 	public void testLetsPlayScissors() {
-		if (p2Move.contentEquals("Scissors")) {
-			assertEquals("p1",RockPaperScissors.letsPlay(p1Move,p2Move));
-		}
-		else testLetsPlayPaper();
+			assertEquals("p1",RockPaperScissors.letsPlay(p1Move,"Scissors"));
+		
 	}
 	
 	@Test
 	public void testLetsPlayRock() {
-		if (p2Move.contentEquals("Rock")) {
-			assertEquals("draw",RockPaperScissors.letsPlay(p1Move,p2Move));
-		}
-		else testLetsPlayPaper();
+			assertEquals("draw",RockPaperScissors.letsPlay(p1Move,"Rock"));
 	}
 
 	@Test

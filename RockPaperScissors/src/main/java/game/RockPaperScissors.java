@@ -5,8 +5,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class RockPaperScissors {
+	
 
-	public static void main(String[] args) throws InterruptedException {
+
+	public static void main(String[] args) {
 		Player p1 = new Player("player1");
 		Player p2 = new Player("player2");
 		List<String> finalScore = new ArrayList<String>();
